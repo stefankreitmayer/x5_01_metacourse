@@ -22,6 +22,8 @@ Since he works full-time, Stefan has a preference for resources that he could us
 
 Stefan goes to metacourse.com (proposed title) and types in "machine learning introduction"
 
+An ideal system would tell Stefan, "these are the 3 items you'll be most happy with. Use these two in parallel, and that one in the end." Much like at a pharmacy. However, until our artificial chemist is trustworthy enough, we're going to have to show a long list of options. Interfaces that assist the learner in combining options are conceivable.
+
 
 ## Data
 

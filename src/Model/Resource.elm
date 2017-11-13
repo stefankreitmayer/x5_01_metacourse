@@ -3,6 +3,8 @@ module Model.Resource exposing (..)
 import Dict exposing (Dict)
 
 type alias Resource =
-  { url : String
-  , title : String
+  { title : String
+  , url : String
+  , kind : String
+  , date : String
   , annotations : Dict String String }

@@ -52,18 +52,18 @@ renderResource : Resource -> Html Msg
 renderResource ({annotations} as resource) =
   let
       title =
-        Html.h3 [] [ Html.a [ Html.Attributes.href resource.url ] [ resource.title |> Html.text ] ]
+        Html.h3 [] [ Html.a [ Html.Attributes.href resource.url, Html.Attributes.target "_blank" ] [ resource.title |> Html.text ] ]
       url =
         Html.cite [] [ Html.text resource.url ]
-      resourceType =
-        case annotations |> Dict.get "type" of
-          Nothing ->
+      kind =
+        case resource.kind of
+          "" ->
             []
 
-          Just str ->
+          str ->
             [ span [] [ str |> Html.text] ]
       urlLine =
-        div [] (resourceType ++ [ url ])
+        div [] (kind ++ [ url ])
       children =
         [ title, urlLine ]
   in
