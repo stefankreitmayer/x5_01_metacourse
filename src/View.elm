@@ -60,6 +60,23 @@ renderResource ({annotations} as resource) =
           "" ->
             []
 
+          "podcast" ->
+            [ Html.img [ Html.Attributes.src "images/icons/audio.svg" ] [] ]
+
+          "article" ->
+            [ Html.img [ Html.Attributes.src "images/icons/eyes.svg" ] [] ]
+
+          "book" ->
+            [ Html.img [ Html.Attributes.src "images/icons/eyes.svg" ] [] ]
+
+          "video" ->
+            [ Html.img [ Html.Attributes.src "images/icons/video.svg" ] [] ]
+
+          "course" ->
+            [ Html.img [ Html.Attributes.src "images/icons/video.svg" ] []
+            , Html.img [ Html.Attributes.src "images/icons/audio.svg" ] []
+            , Html.img [ Html.Attributes.src "images/icons/eyes.svg" ] [] ]
+
           str ->
             [ span [] [ str |> Html.text] ]
       urlLine =

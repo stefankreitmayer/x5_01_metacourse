@@ -59,3 +59,9 @@ h3{
   border: 1px solid rgb(0, 102, 33);
   border-radius: 2px;
 }
+
+.SearchListView__Item img {
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.6;
+}
